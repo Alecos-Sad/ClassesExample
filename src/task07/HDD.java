@@ -17,4 +17,7 @@ public class HDD extends Component {
         return data;
     }
 
+    public void setData(String[] data) {
+        this.data = data;
+    }
 }
