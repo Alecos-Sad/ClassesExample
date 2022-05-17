@@ -1,5 +1,7 @@
 package task06home;
 
+import java.util.Arrays;
+
 public abstract class Planet {
 
     private final String name;
@@ -8,12 +10,13 @@ public abstract class Planet {
     private boolean circles;
     private Satellite[] satellites;
 
-    public Planet(String name, int diameter, double mass, boolean circles, Satellite[] satellites) {
+    public Planet(String name, int diameter, double mass, boolean circles) {
         this.name = name;
         this.diameter = diameter;
         this.mass = mass;
         this.circles = circles;
         this.satellites = satellites;
+
     }
 
     public String getName() {
@@ -47,6 +50,8 @@ public abstract class Planet {
     @Override
     public String toString() {
         return "Planet name: " + name + ", diameter km: " + diameter + ", mass kg: " + mass + ", circles: " +
-                (circles ? "Yes" : "No");
+                (circles ? "Yes" : "No") + ", Satellites: " + Arrays.toString(satellites) ;
     }
+
+
 }

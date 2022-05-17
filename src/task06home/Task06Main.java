@@ -4,11 +4,10 @@ public class Task06Main {
 
     public static void main(String[] args) {
 
-
-        //Sun sun = new Sun(5505,1.98892E30,1392700,'G',"Yellow");
-
-
-
+        Star[] starsSolarSystem = new Star[]{new Sun()};
+        Planet[] planetSolarSystem = new Planet[]{new Earth()};
+        SolarSystem solarSystem = new SolarSystem(starsSolarSystem, planetSolarSystem);
+        System.out.println(solarSystem);
 
     }
 }
