@@ -5,7 +5,8 @@ public class Moon extends Satellite {
     private final static double MASS = 1.36097E23;
     private final static double DIAMETER = 3474.8;
 
-    public Moon(String name, double mass, double diameter) {
+    public Moon() {
+
         super("Moon", MASS, DIAMETER);
     }
 

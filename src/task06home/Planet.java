@@ -3,16 +3,17 @@ package task06home;
 public abstract class Planet {
 
     private final String name;
-    //TODO добавить массив лун
     private final int diameter;
     private final double mass;
     private boolean circles;
+    private Satellite[] satellites;
 
-    public Planet(String name, int diameter, double mass, boolean circles) {
+    public Planet(String name, int diameter, double mass, boolean circles, Satellite[] satellites) {
         this.name = name;
         this.diameter = diameter;
         this.mass = mass;
         this.circles = circles;
+        this.satellites = satellites;
     }
 
     public String getName() {
@@ -29,6 +30,14 @@ public abstract class Planet {
 
     public boolean isCircles() {
         return circles;
+    }
+
+    public Satellite[] getSatellites() {
+        return satellites;
+    }
+
+    public void setSatellites(Satellite[] satellites) {
+        this.satellites = satellites;
     }
 
     public int getMassInEarthMass() {
