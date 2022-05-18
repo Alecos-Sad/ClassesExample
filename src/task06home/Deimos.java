@@ -1,6 +1,6 @@
 package task06home;
 
-public class Deimos extends Satellite{
+public class Deimos extends Satellite {
 
     private final static double MASS = 1.48E15;
     private final static double DIAMETER = 12.4;

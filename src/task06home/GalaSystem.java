@@ -51,7 +51,7 @@ public abstract class GalaSystem {
             str1.append(star).append("\n");
         }
         StringBuilder str2 = new StringBuilder();
-        for (Planet planet : planets){
+        for (Planet planet : planets) {
             str2.append(planet).append("\n");
         }
 

@@ -49,7 +49,7 @@ public abstract class Planet {
     @Override
     public String toString() {
         return "Planet name: " + name + ", diameter km: " + diameter + ", mass kg: " + mass + ", circles: " +
-                (circles ? "Yes" : "No") + ", Satellites: " + Arrays.toString(satellites) ;
+                (circles ? "Yes" : "No") + ", Satellites: " + Arrays.toString(satellites);
     }
 
 
