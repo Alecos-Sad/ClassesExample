@@ -7,7 +7,6 @@ public abstract class GalaSystem {
     private final String name;
 
     public GalaSystem(String name, Star[] stars, Planet[] planets) {
-
         this.name = name;
         this.stars = stars;
         this.planets = planets;
@@ -17,9 +16,7 @@ public abstract class GalaSystem {
     public void addPlanet(Planet planet) {
         Planet[] data = new Planet[planets.length + 1];
         int len = data.length;
-        for (int i = 0; i < len - 1; i++) {
-            data[i] = planets[i];
-        }
+        System.arraycopy(planets, 0, data, 0, len - 1);
         data[len - 1] = planet;
         planets = data;
     }

@@ -24,6 +24,5 @@ public class Task06Main {
         System.out.println(solarSystem);
         System.out.println("Number of Stars : " + solarSystem.getNumbersOfStars());
 
-
     }
 }
