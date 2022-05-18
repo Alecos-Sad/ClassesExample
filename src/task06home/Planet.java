@@ -15,7 +15,6 @@ public abstract class Planet {
         this.diameter = diameter;
         this.mass = mass;
         this.circles = circles;
-        this.satellites = satellites;
 
     }
 

@@ -1,27 +1,63 @@
 package task06home;
 
-import java.util.Arrays;
-
 public abstract class GalaSystem {
 
     private Star[] stars;
     private Planet[] planets;
+    private final String name;
 
-    public GalaSystem(Star[] stars, Planet[] planets) {
+    public GalaSystem(String name, Star[] stars, Planet[] planets) {
+
+        this.name = name;
         this.stars = stars;
         this.planets = planets;
+
+    }
+
+    public void addPlanet(Planet planet) {
+        Planet[] data = new Planet[planets.length + 1];
+        int len = data.length;
+        for (int i = 0; i < len - 1; i++) {
+            data[i] = planets[i];
+        }
+        data[len - 1] = planet;
+        planets = data;
     }
 
     public void setStars(Star[] stars) {
         this.stars = stars;
     }
 
-    public void setPlanets(Planet[] planets) {
-        this.planets = planets;
+    public Star[] getStars() {
+        return stars;
+    }
+
+    public int getNumbersOfStars() {
+        return stars.length;
+    }
+
+    public Planet[] getPlanets() {
+        return planets;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
     public String toString() {
-        return "GalaSystem: " + "Stars: " + Arrays.toString(stars) + ", Planets: " + Arrays.toString(planets);
+        StringBuilder str1 = new StringBuilder();
+        for (Star star : stars) {
+            str1.append(star).append("\n");
+        }
+        StringBuilder str2 = new StringBuilder();
+        for (Planet planet : planets){
+            str2.append(planet).append("\n");
+        }
+
+        return "Name: " + name + "\n"
+                + "Stars: " + "\n" + str1
+                + "\n" + "Planets: " + "\n" + str2;
     }
 }
+

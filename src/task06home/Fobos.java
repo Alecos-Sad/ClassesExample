@@ -1,21 +1,21 @@
 package task06home;
 
-public class Deimos extends Satellite{
+public class Fobos extends Satellite {
+    private final static double MASS = 1.072E16;
+    private final static double DIAMETER = 22.533;
 
-    private final static double MASS = 1.48E15;
-    private final static double DIAMETER = 12.4;
-
-    public Deimos() {
+    public Fobos() {
 
         super("Deimos", MASS, DIAMETER);
     }
 
     public static double getMASS() {
+
         return MASS;
     }
 
     public static double getDIAMETER() {
+
         return DIAMETER;
     }
-
 }

@@ -16,13 +16,13 @@ public class Task07Main {
         RAM ram = new RAM(16000.0, 1600);
         CPU cpu = new CPU(16.0, 3500);
 
-//        Computer computer = new Computer(hdd,fdd,ram,cpu);
-//
-//        computer.checkHDD();
-//        computer.power();
-//        computer.checkHDD();
-//
-//        System.out.println(computer.getHdd().getEmkost());
+        Computer computer = new Computer(hdd,fdd,ram,cpu);
+
+        computer.checkHDD();
+        computer.power();
+        computer.checkHDD();
+
+        System.out.println(computer.getHdd().getEmkost());
 
         Computer2 computer2 = new Computer2(
                 new Component[]{

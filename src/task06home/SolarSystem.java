@@ -2,7 +2,10 @@ package task06home;
 
 public class SolarSystem extends GalaSystem{
 
-    public SolarSystem(Star[] stars, Planet[] planets) {
-        super(stars, planets);
+    public SolarSystem(String name, Star[] stars, Planet[] planets) {
+        super(name, stars, planets);
     }
+
+
+
 }
