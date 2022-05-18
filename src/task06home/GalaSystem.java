@@ -48,13 +48,18 @@ public abstract class GalaSystem {
     public String toString() {
         StringBuilder str1 = new StringBuilder();
         for (Star star : stars) {
-            str1.append(star).append("\n");
+            str1
+                    .append("\t")
+                    .append(star)
+                    .append("\n");
         }
         StringBuilder str2 = new StringBuilder();
         for (Planet planet : planets) {
-            str2.append(planet).append("\n");
+            str2
+                    .append("\t")
+                    .append(planet)
+                    .append("\n");
         }
-
         return "Name: " + name + "\n"
                 + "Stars: " + "\n" + str1
                 + "\n" + "Planets: " + "\n" + str2;
