@@ -7,8 +7,7 @@ public class Task10HomeMain {
         Dog pepperoniDog = new Dog("Pepperoni");
         Puppy puppyValet = new Puppy("Valet");
         Puppy puppyTrevor = new Puppy("Trevor");
-        pepperoniDog.addPuppy(puppyValet);
-        pepperoniDog.addPuppy(puppyTrevor);
+
 
         System.out.println(pepperoniDog);
 
@@ -19,5 +18,6 @@ public class Task10HomeMain {
         puppyValet.jump();
         pepperoniDog.bite();
         puppyTrevor.run();
+
     }
 }
