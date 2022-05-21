@@ -1,42 +1,28 @@
 package task8home;
 
-public class Point extends PairCoordinates {
+public class Point {
 
-    private PairCoordinates coordinates;
+     private final double x;
+     private final double y;
 
-    public Point(double first, double second) {
-        super(first, second);
-        this.coordinates = new PairCoordinates(first, second);
-    }
+     public Point(double x, double y) {
+          this.x = x;
+          this.y = y;
+     }
 
-    public double getX() {
-        return coordinates.getFirst();
-    }
+     public double getX() {
+          return x;
+     }
 
-    public double getY() {
-        return coordinates.getSecond();
-    }
+     public double getY() {
+          return y;
+     }
 
-    @Override
-    public void scale(double valueScale) {
-        double x = coordinates.getFirst();
-        double y = coordinates.getSecond();
-
-        double scaleX = x * valueScale;
-        double scaleY = y + valueScale;
-
-        coordinates = new PairCoordinates(scaleX, scaleY);
-    }
-
-    @Override
-    public void rotate(double angle) {
-        double x = coordinates.getFirst();
-        double y = coordinates.getSecond();
-
-        double rotateX = x * Math.cos(angle) - y * Math.sin(angle);
-        double rotateY = x * Math.sin(angle) + y * Math.cos(angle);
-
-        coordinates = new PairCoordinates(rotateX, rotateY);
-    }
-
+     @Override
+     public String toString() {
+          return "Point{" +
+                  "x=" + x +
+                  ", y=" + y +
+                  '}';
+     }
 }
