@@ -1,28 +1,15 @@
 package task8home;
 
-public class Point {
+public class Point extends Shape {
 
-     private final double x;
-     private final double y;
+    private final double destination;
 
-     public Point(double x, double y) {
-          this.x = x;
-          this.y = y;
-     }
+    public Point(String name, double destination) {
+        super(name);
+        this.destination = destination;
+    }
 
-     public double getX() {
-          return x;
-     }
-
-     public double getY() {
-          return y;
-     }
-
-     @Override
-     public String toString() {
-          return "Point{" +
-                  "x=" + x +
-                  ", y=" + y +
-                  '}';
-     }
+    public double getDestination() {
+        return destination;
+    }
 }

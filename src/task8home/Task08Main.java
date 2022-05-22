@@ -1,36 +1,20 @@
 package task8home;
 
-import java.util.Arrays;
-
 public class Task08Main {
 
     public static void main(String[] args) {
 
-        Point p1 = new Point(1, 2);
-        Point p2 = new Point(2, 2);
-        Point p3 = new Point(1, 1);
-        Point p4 = new Point(1, 2);
+        Point point1 = new Point("Point1", 5);
+        Point point2 = new Point("Point2", 19);
 
-        Line line1 = new Line(p1, p2);
-        Line line2 = new Line(p3, p4);
-        Line line3 = new Line(p1, p3);
-        Line line4 = new Line(p2, p4);
+        Square square = new Square("Square", new LineSegment("LineSegment", point1, point2));
 
-        Line[] lines = new Line[]{line1, line2, line3, line4};
+        square.setSize(25);
+        square.compress(2);
+        square.stretch(9);
+        square.setColor("Red");
 
-        Square square = new Square(lines);
-
-
-
-
-
-        System.out.println(line1.getPoint1().getX() + " " + line1.getPoint1().getY());
-        System.out.println(line2.getPoint2().getX() + " " + line2.getPoint2().getY());
-
-        System.out.println(line3.length());
-
-
-
-
+        System.out.println(square);
+        square.rotate(56);
     }
 }
