@@ -1,5 +1,6 @@
 package task8home;
 
+
 public class Square extends Shape {
 
     private LineSegment lineSegment;
@@ -28,11 +29,11 @@ public class Square extends Shape {
         this.size = size + stretchValue;
     }
 
-    public void rotate(double angle){
+    public void rotate(double angle) {
         System.out.println("Square rotate on " + angle + " degrees");
     }
 
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
@@ -42,6 +43,6 @@ public class Square extends Shape {
 
     @Override
     public String toString() {
-        return getName() + "\n" + "Size: " + size + "\n" + "Color: '" + color;
+        return getName() + "\n" + "Size: " + size + "\n" + "Color: " + color;
     }
 }

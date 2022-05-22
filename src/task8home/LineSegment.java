@@ -1,6 +1,6 @@
 package task8home;
 
-public class LineSegment extends Shape{
+public class LineSegment extends Shape {
 
     private final Point point1;
     private final Point point2;
@@ -11,10 +11,7 @@ public class LineSegment extends Shape{
         this.point2 = point2;
     }
 
-    public double getSegmentLength(){
+    public double getSegmentLength() {
         return Math.sqrt(point2.getDestination() - point1.getDestination());
     }
-
-
 }
-

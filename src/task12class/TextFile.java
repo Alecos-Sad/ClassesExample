@@ -5,23 +5,24 @@ public class TextFile extends File {
     private String[] data;
 
     public TextFile(String name) {
+
         super(name);
     }
 
     public String[] getData() {
+
         return data;
     }
 
     public void setData(String[] data) {
+
         this.data = data;
     }
 
     public void addLine(String line) {
         String[] newData = new String[data == null ? 1 : data.length + 1];
        if (data != null){
-           for (int l = 0; l < data.length; l++) {
-               newData[l] = data[l];
-           }
+           System.arraycopy(data, 0, newData, 0, data.length);
        }
        newData[data.length] = line;
        data = newData;

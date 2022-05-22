@@ -1,8 +1,8 @@
 package task8home;
 
-public abstract class Shape {
+public abstract class Shape{
 
-    private final String name;
+    String name;
 
     public Shape(String name) {
         this.name = name;
@@ -12,8 +12,4 @@ public abstract class Shape {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return "Name: '" + name;
     }
-}

@@ -2,8 +2,6 @@ package task06Class.system.impl;
 
 import task06Class.system.SpaceObject;
 
-import java.util.Arrays;
-
 public class Planet extends SpaceObject {
 
     private Satellite[] satellites;
