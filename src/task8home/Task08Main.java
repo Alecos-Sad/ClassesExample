@@ -9,7 +9,7 @@ public class Task08Main {
 
         Square square = new Square("Square", new LineSegment("LineSegment", point1, point2));
 
-        square.setSize(25);
+        square.setSize(40);
         square.compress(2);
         square.stretch(9);
         square.setColor("Red");
